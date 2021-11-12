@@ -17,6 +17,6 @@ CREATE TABLE `sap-purchasing-source-list`
     `IssgPlantIsFixed`      varchar(1) DEFAULT NULL,
     `PurOutlineAgreementIsFixed` varchar(1) DEFAULT NULL,
     `SourceOfSupplyIsFixed` varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`Material`, `Plant`,`SourceListRecord`),
+    PRIMARY KEY (`Material`, `Plant`,`SourceListRecord`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
