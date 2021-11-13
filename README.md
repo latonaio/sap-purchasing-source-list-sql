@@ -13,7 +13,7 @@ https://api.sap.com/api/OP_API_PURCHASING_SOURCE_SRV_0001/overview
 
 sap-purchasing-source-list-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-purchasing-source-list.sql  
+* sap-purchasing-source-list.sql（SAP 供給元一覧）  
 
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
