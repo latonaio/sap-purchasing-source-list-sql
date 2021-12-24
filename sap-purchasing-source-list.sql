@@ -1,10 +1,10 @@
 CREATE TABLE `sap-purchasing-source-list`
 (
-    `Material`              varchar(40) DEFAULT NULL,
-    `Plant`                 varchar(4) DEFAULT NULL,
-    `SourceListRecord`      varchar(5) DEFAULT NULL,
+    `Material`              varchar(40) NOT NULL,
+    `Plant`                 varchar(4) NOT NULL,
+    `SourceListRecord`      varchar(5) NOT NULL,
+    `ValidityEndDate`       date NOT NULL,
     `ValidityStartDate`     date DEFAULT NULL,
-    `ValidityEndDate`       date DEFAULT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
     `PurchasingOrganization` varchar(4) DEFAULT NULL,
     `SupplyingPlant`        varchar(4) DEFAULT NULL,
@@ -17,6 +17,6 @@ CREATE TABLE `sap-purchasing-source-list`
     `IssgPlantIsFixed`      tinyint(1) DEFAULT NULL,
     `PurOutlineAgreementIsFixed` tinyint(1) DEFAULT NULL,
     `SourceOfSupplyIsFixed` tinyint(1) DEFAULT NULL,
-    PRIMARY KEY (`Material`, `Plant`,`SourceListRecord`)
+    PRIMARY KEY (`Material`, `Plant`,`SourceListRecord`, `ValidityEndDate`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
