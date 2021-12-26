@@ -1,10 +1,10 @@
-CREATE TABLE `sap-purchasing-source-list`
+CREATE TABLE `sap_purchasing_source_list`
 (
     `Material`              varchar(40) NOT NULL,
     `Plant`                 varchar(4) NOT NULL,
     `SourceListRecord`      varchar(5) NOT NULL,
-    `ValidityEndDate`       date NOT NULL,
-    `ValidityStartDate`     date DEFAULT NULL,
+    `ValidityEndDate`       varchar(80) NOT NULL,
+    `ValidityStartDate`     varchar(80) DEFAULT NULL,
     `Supplier`              varchar(10) DEFAULT NULL,
     `PurchasingOrganization` varchar(4) DEFAULT NULL,
     `SupplyingPlant`        varchar(4) DEFAULT NULL,
